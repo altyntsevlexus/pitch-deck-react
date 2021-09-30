@@ -1,9 +1,11 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
+import "./styles/index.scss";
+
 import Bg from "./pages/Bg";
 import Competition from "./pages/Competition";
 import Cover from "./pages/Cover";
-
 import Difference from "./pages/Difference";
 import Marketing from "./pages/Marketing";
 import Mission from "./pages/Mission";

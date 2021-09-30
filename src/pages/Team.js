@@ -6,8 +6,6 @@ import team1 from "../images/team(1).png";
 import team2 from "../images/team(2).png";
 import team3 from "../images/team(3).png";
 
-import "../styles/team.scss";
-
 const Team = () => {
   return (
     <section className="wrapper team text-dark">

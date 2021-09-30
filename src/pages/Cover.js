@@ -4,8 +4,6 @@ import Socials from "../components/Socials";
 
 import iphone from "../images/iphone.png";
 
-import "../styles/cover.scss";
-
 const Cover = ({ type }) => {
   const setAsideBackground = (type) => {
     return type === "primary" ? "cover__aside-primary" : type === "alt" ? "cover__aside-alt" : "cover__aside";

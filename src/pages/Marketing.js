@@ -1,10 +1,9 @@
 import React from "react";
+import Circle from "../components/Circle";
 import Logo from "../components/Logo";
 
 import cornerImgL from "../images/cornerImgL.png";
 import star from "../images/star.svg";
-
-import "../styles/marketing.scss";
 
 const Marketing = () => {
   return (
@@ -15,27 +14,21 @@ const Marketing = () => {
         <h1 className="fs-72 info-title">Marketing Strategy</h1>
         <ul className="marketing">
           <li className="marketing__item">
-            <div className="circle">
-              <img src={star} alt="star" className="circle__icon" />
-            </div>
+            <Circle icon={star} />
             <div>
               <h2 className="fs-48 marketing__title">Advertising</h2>
               <p className="fs-48">React COOs quickly</p>
             </div>
           </li>
           <li className="marketing__item">
-            <div className="circle">
-              <img src={star} alt="star" className="circle__icon" />
-            </div>
+            <Circle icon={star} />
             <div>
               <h2 className="fs-48 marketing__title">Organic search</h2>
               <p className="fs-48">With a focus on long-tail keywords</p>
             </div>
           </li>
           <li className="marketing__item">
-            <div className="circle">
-              <img src={star} alt="star" className="circle__icon" />
-            </div>
+            <Circle icon={star} />
             <div>
               <h2 className="fs-48 marketing__title">Content marketing</h2>
               <p className="fs-48">Providing useful, niche content</p>

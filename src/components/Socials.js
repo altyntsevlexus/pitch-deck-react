@@ -1,29 +1,25 @@
 import React from "react";
+import Circle from "./Circle";
 
 import linkImg from "../images/link.svg";
 import facebookImg from "../images/facebook.svg";
 import twitterImg from "../images/twitter.svg";
+import { Link } from "react-router-dom";
 
 const Socials = ({ website, facebook, twitter }) => {
   return (
     <ul className="socials fs-48">
       <li className="socials__item">
-        <div className="circle">
-          <img src={linkImg} alt="link" className="circle__icon" />
-        </div>
-        <a href="/cover">{website}</a>
+        <Circle icon={linkImg} />
+        <Link to="/">{website}</Link>
       </li>
       <li className="socials__item">
-        <div className="circle">
-          <img src={facebookImg} alt="facebook" className="circle__icon" />
-        </div>
-        <a href="/cover">{facebook}</a>
+        <Circle icon={facebookImg} />
+        <Link to="/">{facebook}</Link>
       </li>
       <li className="socials__item">
-        <div className="circle">
-          <img src={twitterImg} alt="twitter" className="circle__icon" />
-        </div>
-        <a href="/cover">{twitter}</a>
+        <Circle icon={twitterImg} />
+        <Link to="/">{twitter}</Link>
       </li>
     </ul>
   );

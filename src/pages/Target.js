@@ -1,8 +1,6 @@
 import React from "react";
 import Logo from "../components/Logo";
 
-import "../styles/target.scss";
-
 const Target = () => {
   return (
     <section className="wrapper split-screen target text-dark">

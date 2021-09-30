@@ -1,5 +1,4 @@
 import React from "react";
-import "../styles/bg.scss";
 import Logo from "../components/Logo";
 
 const Bg = () => {

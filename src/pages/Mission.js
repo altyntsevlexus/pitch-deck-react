@@ -1,8 +1,6 @@
 import React from "react";
 import Logo from "../components/Logo";
 
-import "../styles/mission.scss";
-
 const Mission = () => {
   return (
     <section className="wrapper split-screen mission text-dark">

@@ -3,8 +3,6 @@ import Logo from "../components/Logo";
 
 import cornerImgR from "../images/cornerImgR.png";
 
-import "../styles/competition.scss";
-
 const Competition = () => {
   return (
     <section className="wrapper split-screen text-dark">
