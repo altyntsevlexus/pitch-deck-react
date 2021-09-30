@@ -1,0 +1,53 @@
+.difference {
+  @extend %flex-column;
+  padding: 150px 50px;
+  align-items: center;
+  text-align: center;
+  background: {
+    repeat: no-repeat;
+    size: cover;
+  }
+
+  &--bg {
+    &--image {
+      background-image: url(../../images/diff-bg.png);
+    }
+
+    &--primary {
+      background-color: $primary;
+    }
+  }
+
+  &__title {
+    margin-bottom: 210px;
+  }
+}
+
+.difference-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 50px;
+  max-width: 1570px;
+  width: 100%;
+
+  @include media(large) {
+    justify-content: space-between;
+    gap: 0px;
+  }
+
+  &__item {
+    @extend %flex-column;
+    gap: 20px;
+    align-items: center;
+    max-width: 350px;
+  }
+
+  &__icon {
+    width: 116px;
+  }
+
+  &__title {
+    font-weight: 700;
+  }
+}

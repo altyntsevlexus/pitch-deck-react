@@ -1,0 +1,53 @@
+.split-screen {
+  @extend %flex-column;
+  text-align: center;
+
+  @include media(medium) {
+    flex-direction: row;
+    text-align: start;
+  }
+
+  &__aside {
+    width: 100%;
+    min-height: 350px;
+    padding: 23px 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: {
+      repeat: no-repeat;
+      size: cover;
+      position: center;
+    }
+
+    &--m--d-none {
+      display: none;
+
+      @include media(medium) {
+        display: block;
+      }
+    }
+
+    @include media(medium) {
+      padding: 46px 67px;
+      width: 40%;
+    }
+
+    @include media(large) {
+      padding: 93px 135px;
+    }
+  }
+
+  &__main {
+    width: 100%;
+    padding: 150px 40px 35px;
+
+    @include media(medium) {
+      padding: 150px 74px 75px;
+      width: 60%;
+    }
+    @include media(large) {
+      padding: 150px 74px;
+    }
+  }
+}

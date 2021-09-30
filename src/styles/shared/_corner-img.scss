@@ -1,0 +1,23 @@
+.corner-img {
+  position: absolute;
+  bottom: 0;
+  display: none;
+
+  @include media(medium) {
+    display: initial;
+    width: 50%;
+  }
+
+  @include media(large) {
+    width: initial;
+  }
+
+  &--pos {
+    &--r {
+      right: 0;
+    }
+    &--l {
+      left: 0;
+    }
+  }
+}

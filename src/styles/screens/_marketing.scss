@@ -1,0 +1,25 @@
+.marketing {
+  @extend %flex-column;
+  align-items: center;
+  gap: 60px;
+
+  @include media(medium) {
+    align-items: flex-start;
+  }
+
+  &__item {
+    @extend %flex-column;
+    align-items: center;
+    gap: 50px;
+
+    @include media(medium) {
+      align-items: flex-start;
+      flex-direction: row;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+}

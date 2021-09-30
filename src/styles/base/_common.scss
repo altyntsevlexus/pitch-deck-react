@@ -1,0 +1,101 @@
+* {
+  font: {
+    family: Nunito, Arial, Helvetica, sans-serif;
+    weight: 400;
+  }
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $light;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo {
+  position: relative;
+  top: -65px;
+  margin: 0 auto;
+
+  @include media(medium) {
+    position: absolute;
+    top: 65px;
+    right: 120px;
+    z-index: 999;
+  }
+}
+
+.wrapper {
+  min-height: 100vh;
+  position: relative;
+}
+
+.fs-144 {
+  font: {
+    size: 56px;
+    weight: 700;
+  }
+  line-height: 108px;
+  letter-spacing: 0.08em;
+
+  @include media(medium) {
+    font-size: 100px;
+    line-height: 152px;
+  }
+
+  @include media(large) {
+    font-size: 144px;
+    line-height: 196px;
+  }
+}
+
+.fs-72 {
+  font: {
+    size: 52px;
+    weight: 800;
+  }
+
+  @include media(medium) {
+    font-size: 62px;
+  }
+
+  @include media(large) {
+    font-size: 72px;
+  }
+}
+
+.fs-48 {
+  font-size: 28px;
+  line-height: 65px;
+
+  @include media(medium) {
+    font-size: 38px;
+  }
+
+  @include media(large) {
+    font-size: 48px;
+  }
+}
+
+.fs-34 {
+  font-size: 24px;
+  line-height: 46px;
+
+  @include media(medium) {
+    font-size: 34px;
+  }
+}
+
+.text-light {
+  color: $text-light;
+}
+.text-dark {
+  color: $text-dark;
+}

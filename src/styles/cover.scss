@@ -1,0 +1,15 @@
+//base
+@import "base/normalize";
+@import "base/variables";
+@import "base/mixins";
+@import "base/fonts";
+@import "base/templates";
+@import "base/common";
+
+//shared
+@import "shared/split-screen";
+@import "shared/circle";
+@import "shared/socials";
+
+//screens
+@import "screens/cover";

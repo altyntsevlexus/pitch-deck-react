@@ -1,0 +1,27 @@
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 45px;
+  row-gap: 60px;
+  max-width: 905px;
+
+  @include media(medium) {
+    justify-content: flex-start;
+  }
+
+  &__item {
+    @extend %flex-column;
+    align-items: center;
+    gap: 30px;
+
+    @include media(medium) {
+      flex-direction: row;
+    }
+  }
+
+  &__description {
+    @extend %flex-column;
+    gap: 20px;
+  }
+}

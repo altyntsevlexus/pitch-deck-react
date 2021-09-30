@@ -1,0 +1,17 @@
+.bg {
+  @extend %flex-column;
+  padding: 0 50px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: {
+    image: url(../../images/Bg.png);
+    repeat: no-repeat;
+    size: cover;
+  }
+
+  &__title {
+    max-width: 1110px;
+    -webkit-text-stroke: 4px #73777a;
+  }
+}

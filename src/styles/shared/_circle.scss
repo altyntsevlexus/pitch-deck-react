@@ -1,0 +1,20 @@
+.circle {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  background-color: $primary;
+  border-radius: 50px;
+
+  @include media(medium) {
+    width: 70px;
+    height: 70px;
+  }
+
+  &__icon {
+    width: 50%;
+    height: 50%;
+  }
+}
