@@ -1,16 +1,15 @@
-import React from "react";
-import Circle from "../components/Circle";
-import Logo from "../components/Logo";
+import Circle from '../components/Circle';
+import Logo from '../components/Logo';
 
-import cornerImgL from "../images/cornerImgL.png";
-import star from "../images/star.svg";
+import cornerImgL from '../images/corner-img-l.png';
+import star from '../images/icons/star.svg';
 
 const Marketing = () => {
   return (
     <section className="wrapper split-screen text-dark">
       <aside className="split-screen__aside split-screen__aside--m--d-none"></aside>
       <main className="split-screen__main">
-        <Logo linkTo="differenceLight" />
+        <Logo />
         <h1 className="fs-72 info-title">Marketing Strategy</h1>
         <ul className="marketing">
           <li className="marketing__item">
@@ -36,7 +35,11 @@ const Marketing = () => {
           </li>
         </ul>
       </main>
-      <img src={cornerImgL} alt="corner" className="corner-img corner-img--pos--l" />
+      <img
+        src={cornerImgL}
+        alt="corner"
+        className="corner-img corner-img--pos--l"
+      />
     </section>
   );
 };

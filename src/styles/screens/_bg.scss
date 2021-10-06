@@ -4,8 +4,9 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  color: $text-light;
   background: {
-    image: url(../../images/Bg.png);
+    image: url(../../images/bg.png);
     repeat: no-repeat;
     size: cover;
   }

@@ -4,19 +4,13 @@
 
 .info-list {
   max-width: 1000px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 55px;
-
-  @include media(medium) {
-    justify-content: flex-start;
-  }
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-gap: 55px;
+  grid-auto-flow: row;
 
   &__item {
     @extend %flex-column;
-    max-width: 455px;
-    width: 100%;
     gap: 20px;
   }
 
@@ -31,4 +25,11 @@
       height: 185px;
     }
   }
+}
+
+.info-list2 {
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 55px;
 }

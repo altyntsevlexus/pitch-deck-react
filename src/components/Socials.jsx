@@ -1,9 +1,8 @@
-import React from "react";
 import Circle from "./Circle";
 
-import linkImg from "../images/link.svg";
-import facebookImg from "../images/facebook.svg";
-import twitterImg from "../images/twitter.svg";
+import linkImg from "../images/icons/link.svg";
+import facebookImg from "../images/icons/facebook.svg";
+import twitterImg from "../images/icons/twitter.svg";
 import { Link } from "react-router-dom";
 
 const Socials = ({ website, facebook, twitter }) => {
