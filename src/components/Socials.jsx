@@ -1,9 +1,10 @@
-import Circle from "./Circle";
+import propTypes from 'prop-types';
+import { Link } from 'react-router-dom';
+import Circle from './Circle';
 
-import linkImg from "../images/icons/link.svg";
-import facebookImg from "../images/icons/facebook.svg";
-import twitterImg from "../images/icons/twitter.svg";
-import { Link } from "react-router-dom";
+import linkImg from '../images/icons/link.svg';
+import facebookImg from '../images/icons/facebook.svg';
+import twitterImg from '../images/icons/twitter.svg';
 
 const Socials = ({ website, facebook, twitter }) => {
   return (
@@ -22,6 +23,18 @@ const Socials = ({ website, facebook, twitter }) => {
       </li>
     </ul>
   );
+};
+
+Socials.propTypes = {
+  website: propTypes.string,
+  facebook: propTypes.string,
+  twitter: propTypes.string,
+};
+
+Socials.defaultProps = {
+  website: 'www.website.com',
+  facebook: '@companyhandle',
+  twitter: '@companyhandle',
 };
 
 export default Socials;

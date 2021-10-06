@@ -1,3 +1,5 @@
+import propTypes from 'prop-types';
+
 import Logo from '../components/Logo';
 
 import users from '../images/icons/users.svg';
@@ -56,6 +58,14 @@ const Difference = ({ theme }) => {
       </ul>
     </section>
   );
+};
+
+Difference.propTypes = {
+  theme: propTypes.string,
+};
+
+Difference.defaultProps = {
+  theme: 'light',
 };
 
 export default Difference;

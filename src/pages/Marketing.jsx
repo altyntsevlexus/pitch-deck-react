@@ -7,7 +7,7 @@ import star from '../images/icons/star.svg';
 const Marketing = () => {
   return (
     <section className="wrapper split-screen text-dark">
-      <aside className="split-screen__aside split-screen__aside--m--d-none"></aside>
+      <aside className="split-screen__aside split-screen__aside--m--d-none" />
       <main className="split-screen__main">
         <Logo />
         <h1 className="fs-72 info-title">Marketing Strategy</h1>

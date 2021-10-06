@@ -1,3 +1,5 @@
+import propTypes from 'prop-types';
+
 import Logo from '../components/Logo';
 import Socials from '../components/Socials';
 
@@ -47,6 +49,12 @@ const Cover = ({ theme }) => {
   );
 };
 
-//this code could be more compact if in /cover and /coverPrimary we had the same socials and linkTo in the Logo. Moreover this is the way it should be (seems like typo in design). Due to this fact
+Cover.propTypes = {
+  theme: propTypes.string,
+};
+
+Cover.defaultProps = {
+  theme: 'light',
+};
 
 export default Cover;

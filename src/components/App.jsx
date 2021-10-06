@@ -1,6 +1,6 @@
-import "../styles/index.scss";
+import '../styles/index.scss';
 
-import AppRouter from "../route/AppRouter";
+import AppRouter from '../route/AppRouter';
 
 const App = () => {
   return <AppRouter />;

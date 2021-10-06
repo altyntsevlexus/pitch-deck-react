@@ -1,13 +1,13 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-import Bg from '../pages/Bg';
-import Competition from '../pages/Competition';
-import Cover from '../pages/Cover';
-import Difference from '../pages/Difference';
-import Marketing from '../pages/Marketing';
-import Mission from '../pages/Mission';
-import Target from '../pages/Target';
-import Team from '../pages/Team';
+import Bg from '../pages/bg';
+import Competition from '../pages/competition';
+import Cover from '../pages/cover';
+import Difference from '../pages/difference';
+import Marketing from '../pages/marketing';
+import Mission from '../pages/mission';
+import Target from '../pages/target';
+import Team from '../pages/team';
 
 const ROUTE_CONFIG = [
   { path: '/cover', component: Cover },
@@ -30,6 +30,7 @@ const AppRouter = () => {
       <Switch>
         {ROUTE_CONFIG.map((route, i) => {
           return (
+            // eslint-disable-next-line react/no-array-index-key
             <Route key={i} path={route.path}>
               <route.component theme={route.theme} />
             </Route>
