@@ -28,9 +28,9 @@ const AppRouter = () => {
   return (
     <Router>
       <Switch>
-        {ROUTE_CONFIG.map((route, index) => {
+        {ROUTE_CONFIG.map((route, i) => {
           return (
-            <Route key={index} path={route.path}>
+            <Route key={i} path={route.path}>
               <route.component theme={route.theme} />
             </Route>
           );
