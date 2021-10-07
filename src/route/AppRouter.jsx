@@ -30,6 +30,7 @@ const AppRouter = () => {
       <Switch>
         {ROUTE_CONFIG.map((route, i) => {
           return (
+            // eslint-disable-next-line react/no-array-index-key
             <Route key={i} path={route.path}>
               <route.component theme={route.theme} />
             </Route>
