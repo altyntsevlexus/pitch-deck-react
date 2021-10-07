@@ -36,7 +36,7 @@ const AppRouter = () => {
           return (
             // eslint-disable-next-line react/no-array-index-key
             <Route key={i} path={route.path} exact={route.exact || false}>
-              <route.component theme={route.theme} />
+              <route.component theme={route.theme ? route.theme : null} />
             </Route>
           );
         })}
