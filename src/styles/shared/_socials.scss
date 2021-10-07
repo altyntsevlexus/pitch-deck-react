@@ -19,12 +19,4 @@
       flex-direction: row;
     }
   }
-
-  &__link {
-    transition: color 0.3s;
-
-    &:hover {
-      color: $primary;
-    }
-  }
 }

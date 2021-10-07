@@ -11,21 +11,15 @@ const Socials = ({ website, facebook, twitter }) => {
     <ul className="socials fs-48">
       <li className="socials__item">
         <Circle icon={linkImg} />
-        <Link to="/" className="socials__link">
-          {website}
-        </Link>
+        <Link to="/">{website}</Link>
       </li>
       <li className="socials__item">
         <Circle icon={facebookImg} />
-        <Link to="/" className="socials__link">
-          {facebook}
-        </Link>
+        <Link to="/">{facebook}</Link>
       </li>
       <li className="socials__item">
         <Circle icon={twitterImg} />
-        <Link to="/" className="socials__link">
-          {twitter}
-        </Link>
+        <Link to="/">{twitter}</Link>
       </li>
     </ul>
   );
