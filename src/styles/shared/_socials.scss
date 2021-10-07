@@ -20,8 +20,11 @@
     }
   }
 
-  &__description {
-    @extend %flex-column;
-    gap: 20px;
+  &__link {
+    transition: color 0.3s;
+
+    &:hover {
+      color: $primary;
+    }
   }
 }

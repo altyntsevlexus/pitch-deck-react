@@ -6,11 +6,12 @@ import Cover from '../pages/cover';
 import Difference from '../pages/difference';
 import Marketing from '../pages/marketing';
 import Mission from '../pages/mission';
+import NoMatch from '../pages/no-match';
 import Target from '../pages/target';
 import Team from '../pages/team';
 
 const ROUTE_CONFIG = [
-  { path: '/cover', component: Cover },
+  { path: '/', component: Cover, exact: true },
   { path: '/cover-alt', component: Cover, theme: 'alt' },
   { path: '/cover-primary', component: Cover, theme: 'primary' },
   { path: '/team', component: Team },
@@ -22,6 +23,7 @@ const ROUTE_CONFIG = [
   { path: '/difference', component: Difference },
   { path: '/difference-alt', component: Difference, theme: 'alt' },
   { path: '/difference-primary', component: Difference, theme: 'primary' },
+  { path: '*', component: NoMatch },
 ];
 
 const AppRouter = () => {
@@ -31,7 +33,7 @@ const AppRouter = () => {
         {ROUTE_CONFIG.map((route, i) => {
           return (
             // eslint-disable-next-line react/no-array-index-key
-            <Route key={i} path={route.path}>
+            <Route key={i} path={route.path} exact={route.exact || false}>
               <route.component theme={route.theme} />
             </Route>
           );
