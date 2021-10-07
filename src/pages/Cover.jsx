@@ -54,7 +54,7 @@ Cover.propTypes = {
 };
 
 Cover.defaultProps = {
-  theme: 'light',
+  theme: '',
 };
 
 export default Cover;

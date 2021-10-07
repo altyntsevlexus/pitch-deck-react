@@ -65,7 +65,7 @@ Difference.propTypes = {
 };
 
 Difference.defaultProps = {
-  theme: 'light',
+  theme: '',
 };
 
 export default Difference;

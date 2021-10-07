@@ -1,9 +1,8 @@
-/* eslint-disable react/react-in-jsx-scope */
 import { Link } from 'react-router-dom';
 import Logo from '../components/Logo';
 
 const NoMatch = () => (
-  <section className="wrapper no-match text-light">
+  <section className="wrapper no-match text-dark">
     <Logo />
     <h1 className="fs-72">
       Oops... The page you were looking for doesn&#39;t exist

@@ -1,0 +1,20 @@
+.navigation {
+  @extend %flex-column;
+  padding: 0 50px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  &__list {
+    @extend %flex-column;
+    gap: 25px;
+  }
+
+  &__item {
+    transition: color 0.3s;
+
+    &:hover {
+      color: $primary;
+    }
+  }
+}
