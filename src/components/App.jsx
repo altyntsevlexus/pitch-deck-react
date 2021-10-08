@@ -6,7 +6,7 @@ import { UserProvider } from '../store/userContext';
 const App = () => {
   return (
     <UserProvider>
-      <AppRouter />;
+      <AppRouter />
     </UserProvider>
   );
 };
