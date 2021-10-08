@@ -57,10 +57,5 @@
       "eslint --fix",
       "pretty-quick --staged"
     ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
   }
 }
