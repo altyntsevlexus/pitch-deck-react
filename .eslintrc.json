@@ -8,7 +8,6 @@
     "plugin:prettier/recommended",
     "plugin:react/recommended"
   ],
-  //not sure if i should extend recommended plugin instead of full prettier or(and) react
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
