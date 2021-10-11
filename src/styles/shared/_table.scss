@@ -1,0 +1,14 @@
+th,
+td {
+  border-bottom: 1px solid #ddd;
+  padding: 5px 15px;
+  text-align: left;
+}
+tr:hover {
+  background-color: $text-dark;
+}
+
+.table-overflow {
+  overflow-x: auto;
+  max-width: 100%;
+}
