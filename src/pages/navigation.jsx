@@ -5,6 +5,9 @@ const Navigation = () => {
     <section className="wrapper navigation text-dark">
       <ul className="navigation__list fs-34">
         <li>
+          <Link to="/table">Table</Link>
+        </li>
+        <li>
           <Link to="/cover">Cover</Link>
         </li>
         <li>

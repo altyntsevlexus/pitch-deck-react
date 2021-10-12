@@ -1,20 +1,33 @@
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import Logo from '../components/Logo';
 import Tr from '../components/Tr';
-import fetchBlocks from '../api/index';
+import { BlocksStateContext } from '../store/blocksContext';
 
 const Table = () => {
-  const [blocks, setBlocks] = useState([{}]);
+  const [blocks, handleBlocks, total] = useContext(BlocksStateContext);
+  const [limit, setLimit] = useState('15');
+
+  const handleChangeLimit = (e) => {
+    setLimit(e.target.value);
+  };
 
   useEffect(() => {
-    fetchBlocks().then((data) => setBlocks(data));
-  }, []);
+    handleBlocks('1', limit);
+  }, [limit]);
 
   return (
-    <section className="wrapper bg text-light">
-      <Logo color="light" />
+    <section className="wrapper table-section text-dark">
+      <Logo />
       <div className="table-overflow">
-        <table className="table">
+        <select name="limit" onChange={handleChangeLimit} value={limit}>
+          <option value="15">15</option>
+          <option value="30">30</option>
+          <option value="50">50</option>
+          <option value="70">70</option>
+          <option value="100">100</option>
+        </select>
+        <p>{total}</p>
+        <table>
           <thead>
             <tr>
               <th>Block ID</th>
