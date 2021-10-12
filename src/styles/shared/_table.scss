@@ -1,11 +1,20 @@
+.table-section {
+  @extend %flex-column;
+  padding: 150px 50px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 th,
 td {
   border-bottom: 1px solid #ddd;
   padding: 5px 15px;
   text-align: left;
 }
+
 tr:hover {
-  background-color: $text-dark;
+  background-color: $text-light;
 }
 
 .table-overflow {
