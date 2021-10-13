@@ -21,27 +21,31 @@ const transformBlocksData = (blocks) => {
     const date = transformDate(newDate);
 
     return {
-      level: block.level.toString(),
-      baker: block.bakerName,
-      timestamp: date,
-      numOfOperations: block.number_of_operations.toString(),
-      volume: (block.volume / 1000000).toString(),
-      fees: (block.fees / 1000000).toString(),
-      endorsements: block.endorsements.toString(),
+      level: block.level.toString() || '-----',
+      baker: block.bakerName || '-----',
+      timestamp: date || '-----',
+      numOfOperations: block.number_of_operations.toString() || '-----',
+      volume: (block.volume / 1000000).toString() || '-----',
+      fees: (block.fees / 1000000).toString() || '-----',
+      endorsements: block.endorsements.toString() || '-----',
     };
   });
 };
 
 const BlocksProvider = ({ children }) => {
   const [blocks, setBlocks] = useState([]);
+  const [total, setTotal] = useState('');
 
   const handleBlocks = (pageNum, limit) => {
     getBlocks(pageNum, limit)
-      .then((response) => transformBlocksData(response.data))
+      .then((response) => {
+        setTotal(response.headers['x-total-count']);
+        return transformBlocksData(response.data);
+      })
       .then((res) => setBlocks(res));
   };
 
-  const data = [blocks, handleBlocks];
+  const data = { blocks, total, handleBlocks };
 
   return (
     <BlocksStateContext.Provider value={data}>
