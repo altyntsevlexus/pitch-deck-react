@@ -10,14 +10,15 @@
 @import 'shared/info-block';
 @import 'shared/socials';
 @import 'shared/split-screen';
-@import 'shared/table';
+@import 'shared/pagination';
 
-@import 'screens/bg';
-@import 'screens/cover';
-@import 'screens/difference';
-@import 'screens/marketing';
-@import 'screens/mission';
-@import 'screens/target';
-@import 'screens/team';
-@import 'screens/no-match';
-@import 'screens/navigation';
+@import 'pages/bg';
+@import 'pages/cover';
+@import 'pages/difference';
+@import 'pages/marketing';
+@import 'pages/mission';
+@import 'pages/target';
+@import 'pages/team';
+@import 'pages/no-match';
+@import 'pages/navigation';
+@import 'pages/table';

@@ -1,9 +1,20 @@
-.table-section {
+.table {
   @extend %flex-column;
   padding: 150px 50px;
   justify-content: center;
   align-items: center;
   text-align: center;
+
+  &__overflow {
+    overflow-x: auto;
+    max-width: 100%;
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 th,
@@ -12,12 +23,11 @@ td {
   padding: 5px 15px;
   text-align: left;
 }
+table {
+  max-width: 1200px;
+  width: 100%;
+}
 
 tr:hover {
   background-color: $text-light;
-}
-
-.table-overflow {
-  overflow-x: auto;
-  max-width: 100%;
 }
