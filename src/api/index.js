@@ -1,11 +1,12 @@
 import axios from 'axios';
 
-const network = 'mainnet';
+const initialURL = (network) =>
+  `https://api.teztracker.com/v2/data/tezos/${network}`;
 
-const initialURL = () => `https://api.teztracker.com/v2/data/tezos/${network}`;
-
-const getBlocks = (pageNum = '1', limit = '15') => {
-  return axios.get(`${initialURL()}/blocks?limit=${limit}&offset=${pageNum}`);
+const getBlocks = (network = 'mainnet', offset = '0', limit = '15') => {
+  return axios.get(
+    `${initialURL(network)}/blocks?limit=${limit}&offset=${offset}`,
+  );
 };
 
 // eslint-disable-next-line import/prefer-default-export
