@@ -1,12 +1,13 @@
-import { createContext, useState } from 'react';
+import { createContext, useContext, useState } from 'react';
 import propTypes from 'prop-types';
 import { getBlocks } from '../api';
+import { NetworkStateContext } from './networkContext';
 
 const BlocksStateContext = createContext([]);
 
 const transformDate = (date) => {
   const year = date.getFullYear();
-  const month = date.getMonth();
+  const month = `0${date.getMonth() + 1}`.slice(-2);
   const day = date.getDate();
   const hours = `0${date.getHours()}`.slice(-2);
   const minutes = `0${date.getMinutes()}`.slice(-2);
@@ -36,8 +37,10 @@ const BlocksProvider = ({ children }) => {
   const [blocks, setBlocks] = useState([]);
   const [total, setTotal] = useState('');
 
+  const network = useContext(NetworkStateContext);
+
   const handleBlocks = (pageNum, limit) => {
-    getBlocks(pageNum, limit)
+    getBlocks(network, pageNum, limit)
       .then((response) => {
         setTotal(response.headers['x-total-count']);
         return transformBlocksData(response.data);
