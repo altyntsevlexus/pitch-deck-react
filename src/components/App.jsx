@@ -1,13 +1,16 @@
 import '../styles/index.scss';
 
-import { AppRouter } from '../route/AppRouter';
+import AppRouter from '../route/AppRouter';
 import { BlocksProvider } from '../store/blocksContext';
+import { NetworkProvider } from '../store/networkContext';
 
 const App = () => {
   return (
-    <BlocksProvider>
-      <AppRouter />
-    </BlocksProvider>
+    <NetworkProvider>
+      <BlocksProvider>
+        <AppRouter />
+      </BlocksProvider>
+    </NetworkProvider>
   );
 };
 
