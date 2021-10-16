@@ -39,8 +39,8 @@ const BlocksProvider = ({ children }) => {
 
   const network = useContext(NetworkStateContext);
 
-  const handleBlocks = (pageNum, limit) => {
-    getBlocks(network, pageNum, limit)
+  const handleBlocks = (offset, limit) => {
+    getBlocks(network, offset, limit)
       .then((response) => {
         setTotal(response.headers['x-total-count']);
         return transformBlocksData(response.data);
