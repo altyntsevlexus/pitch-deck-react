@@ -8,7 +8,7 @@ import Marketing from '../pages/marketing';
 import Mission from '../pages/mission';
 import Navigation from '../pages/navigation';
 import NoMatch from '../pages/no-match';
-import Table from '../pages/blocks-table';
+import BlocksTable from '../pages/blocks-table';
 import Target from '../pages/target';
 import Team from '../pages/team';
 
@@ -26,7 +26,7 @@ const ROUTE_CONFIG = [
   { path: '/difference', component: Difference },
   { path: '/difference-bg', component: Difference, theme: 'bg' },
   { path: '/difference-primary', component: Difference, theme: 'primary' },
-  { path: '/blocks-table', component: Table },
+  { path: '/blocks-table', component: BlocksTable },
   { path: '*', component: NoMatch },
 ];
 

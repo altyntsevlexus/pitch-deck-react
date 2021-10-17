@@ -6,6 +6,37 @@ import ThBlock from '../components/ThBlock';
 import Pagination from '../components/Pagination';
 import { BlocksStateContext } from '../store/blocksContext';
 
+const HEADERS = [
+  {
+    name: 'Block Id',
+    sortBy: 'level',
+  },
+  {
+    name: 'Baker',
+    sortBy: 'baker',
+  },
+  {
+    name: 'Created',
+    sortBy: 'timestamp',
+  },
+  {
+    name: '# of operations',
+    sortBy: 'numOfOperations',
+  },
+  {
+    name: 'Volume',
+    sortBy: 'volume',
+  },
+  {
+    name: 'Fees',
+    sortBy: 'fees',
+  },
+  {
+    name: 'Endorsements',
+    sortBy: 'endorsements',
+  },
+];
+
 const byField = (field) => (a, b) => {
   if (Number(a[field])) {
     return a[field] - b[field];
@@ -13,7 +44,7 @@ const byField = (field) => (a, b) => {
   return a[field].localeCompare(b[field]);
 };
 
-const Table = () => {
+const BlocksTable = () => {
   const { blocks, total, handleBlocks } = useContext(BlocksStateContext);
   const [limit, setLimit] = useState(15);
   const [currentPage, setCurrentPage] = useState(1);
@@ -83,48 +114,17 @@ const Table = () => {
         <table>
           <thead>
             <tr>
-              <ThBlock
-                headerName="Block Id"
-                value="level"
-                handleSort={onSortBy}
-                currentSort={sort}
-              />
-              <ThBlock
-                headerName="Baker"
-                value="baker"
-                handleSort={onSortBy}
-                currentSort={sort}
-              />
-              <ThBlock
-                headerName="Created"
-                value="timestamp"
-                handleSort={onSortBy}
-                currentSort={sort}
-              />
-              <ThBlock
-                headerName="# of operations"
-                value="numOfOperations"
-                handleSort={onSortBy}
-                currentSort={sort}
-              />
-              <ThBlock
-                headerName="Volume"
-                value="volume"
-                handleSort={onSortBy}
-                currentSort={sort}
-              />
-              <ThBlock
-                headerName="Fees"
-                value="fees"
-                handleSort={onSortBy}
-                currentSort={sort}
-              />
-              <ThBlock
-                headerName="Endorsements"
-                value="endorsements"
-                handleSort={onSortBy}
-                currentSort={sort}
-              />
+              {HEADERS.map((header) => {
+                return (
+                  <ThBlock
+                    key={header.sortBy}
+                    headerName={header.name}
+                    sortBy={header.sortBy}
+                    handleSort={onSortBy}
+                    currentSort={sort}
+                  />
+                );
+              })}
             </tr>
           </thead>
           <tbody>
@@ -138,4 +138,4 @@ const Table = () => {
   );
 };
 
-export default Table;
+export default BlocksTable;
