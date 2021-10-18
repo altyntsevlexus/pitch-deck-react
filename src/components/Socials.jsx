@@ -8,7 +8,7 @@ import twitterImg from '../images/icons/twitter.svg';
 
 const Socials = ({ website, facebook, twitter }) => {
   return (
-    <ul className="socials fs-48">
+    <ul className="socials">
       <li className="socials__item">
         <Circle icon={linkImg} />
         <Link to="/">{website}</Link>

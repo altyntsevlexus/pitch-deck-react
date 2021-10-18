@@ -5,10 +5,10 @@ const NoMatch = () => {
   return (
     <section className="wrapper no-match text-dark">
       <Logo />
-      <h1 className="fs-72">
+      <h1 className="no-match__title">
         Oops... The page you were looking for doesn&#39;t exist
       </h1>
-      <Link to="/" className="no-match__button fs-34">
+      <Link to="/" className="no-match__button">
         Go Back
       </Link>
     </section>

@@ -10,8 +10,8 @@ const Team = () => {
     <section className="wrapper team text-dark">
       <Logo />
       <main className="team__about">
-        <h1 className="fs-72">Meet the Team</h1>
-        <p className="fs-34">
+        <h1 className="team__title">Meet the Team</h1>
+        <p className="team__description">
           A description about your team goes here. Talk about your values,
           mission, and anything else you think would be helpful or relevant for
           investors to know. A description about your team goes here.
@@ -21,29 +21,29 @@ const Team = () => {
         <li className="team__item">
           <img src={team0} alt="teammate" className="team__img" />
           <div>
-            <p className="fs-48">Charlie Kelly</p>
-            <p className="fs-34">SEO</p>
+            <p className="team__name">Charlie Kelly</p>
+            <p className="team__description">SEO</p>
           </div>
         </li>
         <li className="team__item">
           <img src={team1} alt="teammate" className="team__img" />
           <div>
-            <p className="fs-48">Sandra Alta</p>
-            <p className="fs-34">CMO</p>
+            <p className="team__name">Sandra Alta</p>
+            <p className="team__description">CMO</p>
           </div>
         </li>
         <li className="team__item">
           <img src={team2} alt="teammate" className="team__img" />
           <div>
-            <p className="fs-48">Sandra Alta</p>
-            <p className="fs-34">CMO</p>
+            <p className="team__name">Sandra Alta</p>
+            <p className="team__description">CMO</p>
           </div>
         </li>
         <li className="team__item">
           <img src={team3} alt="teammate" className="team__img" />
           <div>
-            <p className="fs-48">Joe Black</p>
-            <p className="fs-34">CMO</p>
+            <p className="team__name">Joe Black</p>
+            <p className="team__description">CMO</p>
           </div>
         </li>
       </ul>

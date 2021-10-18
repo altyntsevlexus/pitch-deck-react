@@ -26,7 +26,7 @@ const Difference = ({ theme }) => {
     <section className={`wrapper difference ${setSectionClass(theme)}`}>
       <Logo color={theme && 'light'} />
 
-      <h1 className="fs-72 difference__title">What makes us different?</h1>
+      <h1 className="difference__title">What makes us different?</h1>
       <ul className="difference-list">
         <li className="difference-list__item">
           <img
@@ -34,8 +34,10 @@ const Difference = ({ theme }) => {
             alt="users"
             className="difference-list__icon"
           />
-          <h2 className="difference-list__title fs-48">Proven team</h2>
-          <p className="fs-34">Founding team with multiple exits.</p>
+          <h2 className="difference-list__title">Proven team</h2>
+          <p className="difference-list__description">
+            Founding team with multiple exits.
+          </p>
         </li>
         <li className="difference-list__item">
           <img
@@ -43,8 +45,10 @@ const Difference = ({ theme }) => {
             alt="chart"
             className="difference-list__icon"
           />
-          <h2 className="difference-list__title fs-48">Market traction</h2>
-          <p className="fs-34">Profitable, growing userbase.</p>
+          <h2 className="difference-list__title">Market traction</h2>
+          <p className="difference-list__description">
+            Profitable, growing userbase.
+          </p>
         </li>
         <li className="difference-list__item">
           <img
@@ -52,8 +56,8 @@ const Difference = ({ theme }) => {
             alt="code"
             className="difference-list__icon"
           />
-          <h2 className="difference-list__title fs-48">Unique tech</h2>
-          <p className="fs-34">Innovative technology.</p>
+          <h2 className="difference-list__title">Unique tech</h2>
+          <p className="difference-list__description">Innovative technology.</p>
         </li>
       </ul>
     </section>

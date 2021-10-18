@@ -6,7 +6,12 @@
   text-align: center;
   gap: 50px;
 
+  &__title {
+    @extend %fs-72;
+  }
+
   &__button {
+    @extend %fs-34;
     padding: 15px 50px;
     border-radius: 50px;
     background-color: $primary;

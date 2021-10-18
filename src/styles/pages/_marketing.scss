@@ -9,6 +9,7 @@
 
   &__item {
     @extend %flex-column;
+    @extend %fs-48;
     align-items: center;
     gap: 50px;
 

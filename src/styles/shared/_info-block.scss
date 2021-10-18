@@ -1,4 +1,5 @@
 .info-title {
+  @extend %fs-72;
   margin-bottom: 71px;
 }
 
@@ -15,10 +16,12 @@
   }
 
   &__title {
+    @extend %fs-48;
     font-weight: 700;
   }
 
   &__description {
+    @extend %fs-34;
     height: 155px;
 
     @include media(medium) {

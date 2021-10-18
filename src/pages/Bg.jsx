@@ -4,7 +4,7 @@ const Bg = () => {
   return (
     <section className="wrapper bg text-light">
       <Logo color="light" />
-      <h1 className="fs-72 bg__title">
+      <h1 className="bg__title">
         Introducing: the next generation of online payments.
       </h1>
     </section>

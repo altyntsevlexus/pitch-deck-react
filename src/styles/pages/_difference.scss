@@ -20,6 +20,7 @@
   }
 
   &__title {
+    @extend %fs-72;
     margin-bottom: 210px;
   }
 }
@@ -49,6 +50,11 @@
   }
 
   &__title {
+    @extend %fs-48;
     font-weight: 700;
+  }
+
+  &__description {
+    @extend %fs-34;
   }
 }

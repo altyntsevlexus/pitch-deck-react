@@ -27,14 +27,16 @@ const Cover = ({ theme }) => {
       {theme === 'alt' ? (
         <main className="split-screen__main cover__main-alt">
           <Logo />
-          <h1 className="fs-144 cover__title">Company Name</h1>
-          <p className="fs-48">Give a short, strong elevator pitch here.</p>
+          <h1 className="cover__title-alt">Company Name</h1>
+          <p className="cover__description-alt">
+            Give a short, strong elevator pitch here.
+          </p>
         </main>
       ) : (
         <main className="split-screen__main">
           <Logo />
-          <h1 className="fs-72 cover__title">Company Name</h1>
-          <p className="cover__description fs-48">
+          <h1 className="cover__title">Company Name</h1>
+          <p className="cover__description">
             Intriguing summary goes here. Keep it short & sweet. Describe the
             problem you are solving. Focus on the pain point.
           </p>

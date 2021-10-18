@@ -17,10 +17,17 @@
   }
 
   &__title {
+    @extend %fs-72;
     margin-bottom: 55px;
   }
 
+  &__title-alt {
+    @extend %fs-144;
+    margin-bottom: 102px;
+  }
+
   &__description {
+    @extend %fs-48;
     margin-bottom: 60px;
     height: initial;
     font-weight: 400;
@@ -33,6 +40,10 @@
     @include media(large) {
       height: 100%;
     }
+  }
+
+  &__description-alt {
+    @extend %fs-48;
   }
 
   &__iphone {

@@ -20,6 +20,14 @@
     }
   }
 
+  &__title {
+    @extend %fs-72;
+  }
+
+  &__description {
+    @extend %fs-34;
+  }
+
   &__list {
     display: flex;
     flex-wrap: wrap;
@@ -43,5 +51,9 @@
       flex-direction: row;
       text-align: start;
     }
+  }
+
+  &__name {
+    @extend %fs-48;
   }
 }
