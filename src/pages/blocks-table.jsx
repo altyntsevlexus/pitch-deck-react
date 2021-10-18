@@ -94,10 +94,10 @@ const BlocksTable = () => {
   }, [currentPage, limit]);
 
   return (
-    <section className="wrapper table text-dark">
+    <section className="wrapper blocks-table">
       <Logo />
-      <div className="table__overflow">
-        <div className="table__nav">
+      <div className="blocks-table__overflow">
+        <div className="blocks-table__nav">
           <div>
             <p>Show items:</p>
             <select name="limit" onChange={onLimitChanged} value={limit}>
@@ -111,7 +111,7 @@ const BlocksTable = () => {
           <p>Total amount: {total}</p>
           <Pagination onPageChanged={onPageChanged} currentPage={currentPage} />
         </div>
-        <table>
+        <table className="table">
           <thead>
             <tr>
               {HEADERS.map((header) => {

@@ -2,7 +2,7 @@ import Logo from '../components/Logo';
 
 const Target = () => {
   return (
-    <section className="wrapper split-screen target text-dark">
+    <section className="wrapper split-screen target">
       <aside className="split-screen__aside target__aside" />
       <main className="split-screen__main">
         <Logo />

@@ -1,4 +1,4 @@
-.table {
+.blocks-table {
   @extend %flex-column;
   padding: 150px 50px;
   justify-content: center;
@@ -23,7 +23,7 @@ td {
   padding: 5px 15px;
   text-align: left;
 }
-table {
+.table {
   max-width: 1200px;
   width: 100%;
 }

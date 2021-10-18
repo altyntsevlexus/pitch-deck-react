@@ -7,7 +7,7 @@ import team3 from '../images/team-3.png';
 
 const Team = () => {
   return (
-    <section className="wrapper team text-dark">
+    <section className="wrapper team ">
       <Logo />
       <main className="team__about">
         <h1 className="team__title">Meet the Team</h1>

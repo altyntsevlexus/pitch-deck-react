@@ -4,7 +4,7 @@ import cornerImgR from '../images/corner-img-r.png';
 
 const Competition = () => {
   return (
-    <section className="wrapper split-screen text-dark">
+    <section className="wrapper split-screen">
       <main className="split-screen__main">
         <Logo />
         <div>

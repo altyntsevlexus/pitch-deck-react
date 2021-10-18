@@ -13,11 +13,11 @@ import codePrimary from '../images/icons/code-c-primary.svg';
 const setSectionClass = (theme) => {
   switch (theme) {
     case 'bg':
-      return 'difference--bg--image text-light';
+      return 'difference--bg--image';
     case 'primary':
-      return 'difference--bg--primary text-light';
+      return 'difference--bg--primary';
     default:
-      return 'text-dark';
+      return null;
   }
 };
 

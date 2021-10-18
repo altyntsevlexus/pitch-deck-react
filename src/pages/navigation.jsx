@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 const Navigation = () => {
   return (
-    <section className="wrapper navigation text-dark">
+    <section className="wrapper navigation">
       <ul className="navigation__list">
         <li>
           <Link to="/blocks-table">Blocks Table</Link>

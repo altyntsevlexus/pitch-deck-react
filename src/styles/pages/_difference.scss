@@ -12,10 +12,12 @@
   &--bg {
     &--image {
       background-image: url(../../images/diff-bg.png);
+      color: $text-light;
     }
 
     &--primary {
       background-color: $primary;
+      color: $text-light;
     }
   }
 

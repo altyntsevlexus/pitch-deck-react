@@ -18,7 +18,7 @@ const setAsideBackground = (theme) => {
 
 const Cover = ({ theme }) => {
   return (
-    <section className="wrapper split-screen cover text-dark">
+    <section className="wrapper split-screen cover">
       <aside className={`split-screen__aside ${setAsideBackground(theme)}`}>
         {theme === 'primary' && (
           <img src={iphone} alt="iphone" className="cover__iphone" />

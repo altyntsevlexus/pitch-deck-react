@@ -2,7 +2,7 @@ import Logo from '../components/Logo';
 
 const Mission = () => {
   return (
-    <section className="wrapper split-screen mission text-dark">
+    <section className="wrapper split-screen mission">
       <aside className="split-screen__aside mission__aside" />
       <main className="split-screen__main">
         <Logo />
