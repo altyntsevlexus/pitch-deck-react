@@ -2,23 +2,9 @@
 @import 'base/variables';
 @import 'base/mixins';
 @import 'base/fonts';
-@import 'base/templates';
 @import 'base/common';
+@import 'base/templates';
 
-@import 'shared/circle';
 @import 'shared/corner-img';
 @import 'shared/info-block';
-@import 'shared/socials';
 @import 'shared/split-screen';
-@import 'shared/pagination';
-
-@import 'pages/bg';
-@import 'pages/cover';
-@import 'pages/difference';
-@import 'pages/marketing';
-@import 'pages/mission';
-@import 'pages/target';
-@import 'pages/team';
-@import 'pages/no-match';
-@import 'pages/navigation';
-@import 'pages/blocks-table';

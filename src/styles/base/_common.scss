@@ -31,19 +31,6 @@ button {
   cursor: pointer;
 }
 
-.logo {
-  position: relative;
-  top: -65px;
-  margin: 0 auto;
-
-  @include media(medium) {
-    position: absolute;
-    top: 65px;
-    right: 120px;
-    z-index: 999;
-  }
-}
-
 .wrapper {
   min-height: 100vh;
   position: relative;

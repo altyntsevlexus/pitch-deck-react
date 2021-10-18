@@ -1,0 +1,23 @@
+@import '../../styles/base/variables';
+@import '../../styles/base/templates';
+
+.bg {
+  @extend %flex-column;
+  padding: 0 50px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: $text-light;
+
+  background: {
+    image: url(../../images/bg.png);
+    repeat: no-repeat;
+    size: cover;
+  }
+
+  &__title {
+    max-width: 1110px;
+    @extend %fs-72;
+    -webkit-text-stroke: 4px #73777a;
+  }
+}

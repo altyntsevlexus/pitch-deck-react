@@ -1,0 +1,15 @@
+@import '../../styles/base/variables';
+@import '../../styles/base/templates';
+
+.logo {
+  position: relative;
+  top: -65px;
+  margin: 0 auto;
+
+  @include media(medium) {
+    position: absolute;
+    top: 65px;
+    right: 120px;
+    z-index: 999;
+  }
+}
