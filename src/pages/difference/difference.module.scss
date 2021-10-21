@@ -1,6 +1,6 @@
 @import '../../styles/base/variables';
+@import '../../styles/base/mixins';
 @import '../../styles/base/templates';
-
 .difference {
   @extend %flex-column;
   padding: 150px 50px;

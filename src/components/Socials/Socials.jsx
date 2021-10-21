@@ -6,7 +6,7 @@ import linkImg from '../../images/icons/link.svg';
 import facebookImg from '../../images/icons/facebook.svg';
 import twitterImg from '../../images/icons/twitter.svg';
 
-import styled from './socials.module.scss';
+import styled from './Socials.module.scss';
 
 const Socials = ({ website, facebook, twitter }) => {
   return (

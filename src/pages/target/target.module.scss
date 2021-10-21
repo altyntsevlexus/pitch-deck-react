@@ -1,6 +1,6 @@
 @import '../../styles/base/variables';
+@import '../../styles/base/mixins';
 @import '../../styles/base/templates';
-
 .target {
   &__aside {
     background-image: url(../../images/target.png);

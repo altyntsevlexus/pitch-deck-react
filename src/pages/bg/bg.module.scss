@@ -1,6 +1,6 @@
 @import '../../styles/base/variables';
+@import '../../styles/base/mixins';
 @import '../../styles/base/templates';
-
 .bg {
   @extend %flex-column;
   padding: 0 50px;
