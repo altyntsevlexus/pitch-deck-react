@@ -1,4 +1,4 @@
-import Logo from '../../components/Logo/Logo';
+import Logo from '../../components/Logo';
 
 import styled from './bg.module.scss';
 

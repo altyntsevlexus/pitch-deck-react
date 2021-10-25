@@ -1,6 +1,6 @@
-import Logo from '../../components/Logo/Logo';
+import Logo from '../components/Logo';
 
-import cornerImgR from '../../images/corner-img-r.png';
+import cornerImgR from '../images/corner-img-r.png';
 
 const Competition = () => {
   return (

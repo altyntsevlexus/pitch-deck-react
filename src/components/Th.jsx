@@ -1,6 +1,6 @@
 import propTypes from 'prop-types';
 
-const ThBlock = ({ headerName, sortBy, currentSort, handleSort }) => {
+const Th = ({ headerName, sortBy, currentSort, sortFunction }) => {
   const sortArrow = () => {
     if (sortBy === currentSort.key) {
       return currentSort.direction
@@ -12,25 +12,25 @@ const ThBlock = ({ headerName, sortBy, currentSort, handleSort }) => {
 
   return (
     <th>
-      <button type="button" value={sortBy} onClick={handleSort}>
+      <button type="button" value={sortBy} onClick={sortFunction}>
         {headerName} {sortArrow()}
       </button>
     </th>
   );
 };
 
-ThBlock.propTypes = {
+Th.propTypes = {
   headerName: propTypes.string.isRequired,
   sortBy: propTypes.string,
   // eslint-disable-next-line react/forbid-prop-types
   currentSort: propTypes.object,
-  handleSort: propTypes.func,
+  sortFunction: propTypes.func,
 };
 
-ThBlock.defaultProps = {
+Th.defaultProps = {
   sortBy: '',
-  handleSort: () => null,
+  sortFunction: () => null,
   currentSort: {},
 };
 
-export default ThBlock;
+export default Th;

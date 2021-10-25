@@ -2,7 +2,7 @@
 @import '../../styles/base/mixins';
 @import '../../styles/base/templates';
 
-.no-match {
+.noMatch {
   @extend %flex-column;
   padding: 0 50px;
   justify-content: center;

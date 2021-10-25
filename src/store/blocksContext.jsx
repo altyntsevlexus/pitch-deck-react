@@ -4,6 +4,7 @@ import { getBlocks } from '../api';
 import { NetworkStateContext } from './networkContext';
 
 const BlocksStateContext = createContext([]);
+const useBlocksState = () => useContext(BlocksStateContext);
 
 const transformDate = (date) => {
   const year = date.getFullYear();
@@ -61,4 +62,4 @@ BlocksProvider.propTypes = {
   children: propTypes.node.isRequired,
 };
 
-export { BlocksStateContext, BlocksProvider };
+export { useBlocksState, BlocksProvider };

@@ -1,0 +1,16 @@
+@import '../../styles/base/variables';
+
+th,
+td {
+  border-bottom: 1px solid #ddd;
+  padding: 5px 15px;
+  text-align: left;
+}
+.table {
+  max-width: 1200px;
+  width: 100%;
+}
+
+tr:hover {
+  background-color: $text-light;
+}

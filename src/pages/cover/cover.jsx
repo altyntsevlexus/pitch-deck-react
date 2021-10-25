@@ -1,7 +1,7 @@
 import propTypes from 'prop-types';
 
-import Logo from '../../components/Logo/Logo';
-import Socials from '../../components/Socials/Socials';
+import Logo from '../../components/Logo';
+import Socials from '../../components/Socials';
 
 import iphone from '../../images/iphone.png';
 

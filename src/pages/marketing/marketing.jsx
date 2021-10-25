@@ -1,5 +1,5 @@
-import Circle from '../../components/Circle/Circle';
-import Logo from '../../components/Logo/Logo';
+import Circle from '../../components/Circle';
+import Logo from '../../components/Logo';
 
 import cornerImgL from '../../images/corner-img-l.png';
 import star from '../../images/icons/star.svg';

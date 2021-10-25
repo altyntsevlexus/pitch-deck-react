@@ -1,4 +1,4 @@
-import Logo from '../../components/Logo/Logo';
+import Logo from '../../components/Logo';
 
 import team0 from '../../images/team-0.png';
 import team1 from '../../images/team-1.png';

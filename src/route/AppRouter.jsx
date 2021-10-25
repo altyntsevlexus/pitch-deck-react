@@ -1,16 +1,16 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-import Bg from '../pages/bg/bg';
-import Competition from '../pages/competition/competition';
-import Cover from '../pages/cover/cover';
-import Difference from '../pages/difference/difference';
-import Marketing from '../pages/marketing/marketing';
-import Mission from '../pages/mission/mission';
-import Navigation from '../pages/navigation/navigation';
-import NoMatch from '../pages/no-match/no-match';
-import BlocksTable from '../pages/blocks-table/blocks-table';
-import Target from '../pages/target/target';
-import Team from '../pages/team/team';
+import Bg from '../pages/bg';
+import Competition from '../pages/competition';
+import Cover from '../pages/cover';
+import Difference from '../pages/difference';
+import Marketing from '../pages/marketing';
+import Mission from '../pages/mission';
+import Navigation from '../pages/navigation';
+import NoMatch from '../pages/no-match';
+import BlocksTable from '../pages/blocksTable';
+import Target from '../pages/target';
+import Team from '../pages/team';
 
 const ROUTE_CONFIG = [
   { path: '/', component: Navigation, exact: true },

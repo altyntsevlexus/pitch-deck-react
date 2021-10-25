@@ -1,6 +1,6 @@
 import propTypes from 'prop-types';
 
-import Logo from '../../components/Logo/Logo';
+import Logo from '../../components/Logo';
 
 import users from '../../images/icons/users.svg';
 import chart from '../../images/icons/chart.svg';
