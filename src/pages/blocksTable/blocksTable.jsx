@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import { useEffect, useState } from 'react';
-import { useBlocksState } from '../../store/blocksContext';
+import { useBlocksState } from '../../context/blocksContext';
 
 import Logo from '../../components/Logo';
 import Pagination from '../../components/Pagination';
